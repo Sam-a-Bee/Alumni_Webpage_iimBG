@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Management Unplugged - Past Events | Alumni Network</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/premium.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-left">
+                <img src="../IIM BG 10 years.png" alt="IIM Bodhgaya Logo" class="institute-logo">
+            </div>
+            <ul class="nav-center">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#events">Events</a></li>
+                <li><a href="../index.html#gallery">Gallery</a></li>
+                <li><a href="../index.html#roadmaps">Roadmaps</a></li>
+                <li><a href="../index.html#newsletter">Newsletter</a></li>
+            </ul>
+            <div class="logo-right">
+                <img src="../alumni-committee-logo.jpeg" alt="Alumni Committee Logo" class="committee-logo">
+            </div>
+        </nav>
+    </header>
+
+    <main style="margin-top: 100px;">
+        <section class="past-events-section">
+            <h1>Management Unplugged - Past Events</h1>
+            <p class="section-description">Explore previous sessions of our leadership and management series</p>
+
+            <div class="past-events-grid">
+                <div class="past-event-card">
+                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=250&fit=crop" alt="Management Unplugged 2023" class="past-event-image">
+                    <div class="past-event-content">
+                        <h3>Management Unplugged 2023</h3>
+                        <p class="past-event-date">November 20, 2023</p>
+                        <p>Leadership in Digital Age featuring CEOs from top tech companies sharing insights on digital transformation and innovation strategies.</p>
+                        <div class="event-stats">
+                            <span>5 CEOs</span>
+                            <span>150+ Attendees</span>
+                            <span>4 Hours</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="past-event-card">
+                    <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=400&h=250&fit=crop" alt="Management Unplugged 2023 Q2" class="past-event-image">
+                    <div class="past-event-content">
+                        <h3>Entrepreneurship Masterclass</h3>
+                        <p class="past-event-date">August 15, 2023</p>
+                        <p>Startup ecosystem deep dive with successful alumni entrepreneurs sharing their journey from idea to IPO.</p>
+                        <div class="event-stats">
+                            <span>8 Entrepreneurs</span>
+                            <span>200+ Attendees</span>
+                            <span>6 Hours</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="past-event-card">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=250&fit=crop" alt="Management Unplugged 2023 Q1" class="past-event-image">
+                    <div class="past-event-content">
+                        <h3>Finance & Investment Trends</h3>
+                        <p class="past-event-date">March 10, 2023</p>
+                        <p>Market analysis and investment strategies session with alumni working in top investment banks and financial institutions.</p>
+                        <div class="event-stats">
+                            <span>6 Experts</span>
+                            <span>120+ Attendees</span>
+                            <span>3 Hours</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="past-event-card">
+                    <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=400&h=250&fit=crop" alt="Management Unplugged 2022" class="past-event-image">
+                    <div class="past-event-content">
+                        <h3>Sustainable Business Practices</h3>
+                        <p class="past-event-date">December 5, 2022</p>
+                        <p>ESG and sustainability in business operations featuring alumni leading green initiatives in their organizations.</p>
+                        <div class="event-stats">
+                            <span>4 Leaders</span>
+                            <span>100+ Attendees</span>
+                            <span>3 Hours</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-section">
+                <h2>Event Gallery</h2>
+                <div class="past-events-gallery">
+                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=300&h=200&fit=crop" alt="Gallery 1" onclick="openLightbox(this.src)">
+                    <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=300&h=200&fit=crop" alt="Gallery 2" onclick="openLightbox(this.src)">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=300&h=200&fit=crop" alt="Gallery 3" onclick="openLightbox(this.src)">
+                    <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=300&h=200&fit=crop" alt="Gallery 4" onclick="openLightbox(this.src)">
+                    <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=300&h=200&fit=crop" alt="Gallery 5" onclick="openLightbox(this.src)">
+                    <img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=300&h=200&fit=crop" alt="Gallery 6" onclick="openLightbox(this.src)">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <script>
+        function openLightbox(src) {
+            document.getElementById('lightbox').style.display = 'block';
+            document.getElementById('lightbox-img').src = src;
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

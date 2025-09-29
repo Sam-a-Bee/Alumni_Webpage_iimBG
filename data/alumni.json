@@ -1,0 +1,54 @@
+{
+  "alumni": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "year": "2020",
+      "field": "Computer Science",
+      "email": "john.doe@example.com",
+      "company": "Tech Corp",
+      "position": "Software Engineer"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "year": "2019",
+      "field": "Business Administration",
+      "email": "jane.smith@example.com",
+      "company": "Business Solutions Inc",
+      "position": "Marketing Manager"
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "title": "Annual Alumni Reunion",
+      "date": "2024-06-15",
+      "time": "18:00",
+      "location": "Main Campus",
+      "description": "Join us for our annual reunion dinner and networking event"
+    },
+    {
+      "id": 2,
+      "title": "Career Fair",
+      "date": "2024-04-20",
+      "time": "10:00",
+      "location": "Student Center",
+      "description": "Alumni sharing career opportunities and mentorship"
+    }
+  ],
+  "news": [
+    {
+      "id": 1,
+      "title": "New Alumni Portal Launched",
+      "date": "2024-01-15",
+      "content": "We're excited to announce the launch of our new alumni portal with enhanced features for networking and career development."
+    },
+    {
+      "id": 2,
+      "title": "Alumni Achievement Awards",
+      "date": "2024-02-01",
+      "content": "Nominations are now open for the 2024 Alumni Achievement Awards. Recognize outstanding alumni contributions."
+    }
+  ]
+}

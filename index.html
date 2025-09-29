@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Page</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/premium.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-left">
+                <img src="assets/images/IIM BG 10 years.png" alt="Institute Logo" class="institute-logo">
+            </div>
+            <ul class="nav-center">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#roadmaps">Roadmaps</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#mentorship">Mentorship</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="logo-right">
+                <img src="assets/images/alumni-committee-logo.jpeg" alt="Alumni Committee" class="committee-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span style="display:none; color:#1a237e; font-weight:600;">Alumni Committee</span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="photo-slider">
+        <div class="slider-container">
+            <div class="slide active">
+                <img src="assets/images/slide1.jpg" alt="Campus View" loading="eager" onerror="this.src='https://images.unsplash.com/photo-1562774053-701939374585?w=1920&h=600&fit=crop'">
+            </div>
+            <div class="slide">
+                <img src="assets/images/slide2.jpg" alt="Anusmruti Alumni Meet" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1511578314322-379afb476865?w=1920&h=600&fit=crop'">
+            </div>
+            <div class="slide">
+                <img src="assets/images/slide3.jpg" alt="Chai & Chapters Interview" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1920&h=600&fit=crop'">
+            </div>
+            <div class="slide">
+                <img src="assets/images/slide4.jpg" alt="Graduation Ceremony" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1920&h=600&fit=crop'">
+            </div>
+            <div class="slide">
+                <img src="assets/images/slide5.jpg" alt="Student Activities" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=1920&h=600&fit=crop'">
+            </div>
+            <button class="slider-btn prev" onclick="changeSlide(-1)">❮</button>
+            <button class="slider-btn next" onclick="changeSlide(1)">❯</button>
+            <div class="slider-dots">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section id="about" class="about-us">
+            <h1>ABOUT US</h1>
+            <p>Our alumni network represents a vibrant community of leaders, innovators, and changemakers who continue to shape industries and societies worldwide. We foster lifelong connections, facilitate knowledge sharing, and create opportunities for professional and personal growth among our distinguished graduates.</p>
+            
+            <div class="messages-container">
+                <div class="message-block">
+                    <img src="C:\Users\Sahil Bhagwat\OneDrive\Desktop\Committee\Alumni\Alumni_WebPage\assets\images\Directors Photos.jpg" alt="Director" class="message-photo">
+                    <h3>Director's Message</h3>
+                    <p>"Our alumni are the true ambassadors of our institution's excellence. Their achievements in diverse fields continue to inspire current students and faculty alike. The alumni network serves as a bridge between our academic legacy and future aspirations."</p>
+                    <p class="signature">- Dr. Vinita S. Sahay<br>Director</p>
+                </div>
+                
+                <div class="message-block">
+                    <img src="C:\Users\Sahil Bhagwat\OneDrive\Desktop\Committee\Alumni\Alumni_WebPage\assets\images\Chairpersons Photo.jpg" alt="Chairperson" class="message-photo">
+                    <h3>Chairperson's Message</h3>
+                    <p>"The strength of our alumni community lies in its diversity and commitment to excellence. Through initiatives like Anusmruti and Chai & Chapters, we continue to build meaningful connections that transcend geographical boundaries and professional domains."</p>
+                    <p class="signature">- Dr Teena Bharti<br>Alumni Committee Chairperson</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="events" class="events">
+            <h1>EVENTS AND SERIES</h1>
+            
+            <div class="section-divider">
+                <div class="gold-line"></div>
+                <span class="section-title">Events</span>
+                <div class="gold-line"></div>
+            </div>
+            
+            <div class="events-grid">
+                <div class="event-card">
+                    <img src="assets/images/Anusmruti Header Image.jpg" alt="Anusmruti" class="event-image">
+                    <h3>Anusmruti</h3>
+                    <p class="event-date">December 28, 2024</p>
+                    <p>Annual alumni reunion bringing together graduates from all batches to celebrate achievements, share experiences, and strengthen the alumni network through networking sessions and cultural programs.</p>
+                    <button class="past-events-btn" onclick="window.location.href='pages/anusmruti-past-events.html'">Past Events</button>
+                </div>
+                
+                <div class="event-card">
+                    <img src="C:\Users\Sahil Bhagwat\OneDrive\Desktop\Committee\Alumni\Alumni_WebPage\assets\images\Management Unplugged Image.jpg" alt="Management Unplugged" class="event-image">
+                    <h3>Management Unplugged</h3>
+                    <p class="event-date">January 15, 2025</p>
+                    <p>Interactive leadership series featuring industry experts and successful alumni sharing insights on modern management practices, innovation strategies, and career development opportunities.</p>
+                    <button class="past-events-btn" onclick="window.location.href='pages/management-unplugged-past-events.html'">Past Events</button>
+                </div>
+            </div>
+            
+            <div class="section-divider">
+                <div class="gold-line"></div>
+                <span class="section-title">Series</span>
+                <div class="gold-line"></div>
+            </div>
+            
+            <div class="events-grid">
+                <div class="event-card">
+                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=250&fit=crop" alt="Chai & Chapters" class="event-image">
+                    <h3>Chai & Chapters</h3>
+                    <p class="event-date">February 10, 2025</p>
+                    <p>Intimate conversation series featuring alumni sharing their professional journeys over tea. A relaxed format for meaningful discussions about career transitions, challenges, and success stories.</p>
+                    <button class="past-events-btn" onclick="window.location.href='pages/chai-chapters-past-events.html'">Past Events</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <div class="gallery-grid" id="gallery-grid"></div>
+        </section>
+
+        <section id="roadmaps" class="roadmaps">
+            <h1>ROADMAPS</h1>
+            <p>Inspiring careers of distinguished alumni</p>
+            <div class="roadmaps-grid" id="roadmaps-grid"></div>
+        </section>
+
+        <section id="newsletter" class="newsletter">
+            <h1>NEWSLETTER</h1>
+            <div class="newsletter-content">
+                <div class="newsletter-preview">
+                    <img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400&h=250&fit=crop" alt="Newsletter" class="newsletter-image">
+                    <div class="newsletter-text">
+                        <h3>Alumni Connect - December 2024 Edition</h3>
+                        <p>🎓 <strong>Featured Story:</strong> From Campus to CEO - Journey of Rajesh Kumar (Batch 2015)<br>
+                        📅 <strong>Upcoming:</strong> Anusmruti 2024 - Annual Alumni Meet on Dec 28th<br>
+                        🎬 <strong>New Series:</strong> Chai & Chapters launches with industry leaders<br>
+                        💼 <strong>Career Corner:</strong> Top hiring companies seeking our alumni</p>
+                        <button class="btn-primary" onclick="openNewsletter()">Read Full Newsletter</button>
+                    </div>
+                </div>
+                <div class="newsletter-subscribe">
+                    <h3>Stay Connected</h3>
+                    <p>Get monthly updates on alumni achievements, events, and opportunities</p>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="news" class="news">
+            <h2>Latest News</h2>
+            <div id="news-list"></div>
+        </section>
+
+        <section id="mentorship" class="mentorship">
+            <h2>Mentorship Program</h2>
+            <div class="mentorship-content">
+                <p>Connect with experienced alumni for career guidance and professional development.</p>
+                <div id="mentorship-opportunities"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Event Modal -->
+    <div id="eventModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="" alt="">
+        <div class="lightbox-nav">
+            <button onclick="prevImage()">&lt;</button>
+            <button onclick="nextImage()">&gt;</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="LinkedIn">💼</a>
+                    <a href="#" aria-label="Twitter">🐦</a>
+                    <a href="#" aria-label="Instagram">📷</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>📧 alumni@example.com</p>
+                <p>📞 +91 12345 67890</p>
+            </div>
+            <div class="footer-section">
+                <p>&copy; 2024 Alumni Page. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

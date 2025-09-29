@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anusmruti - Past Events | Alumni Network</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/premium.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-left">
+                <img src="../IIM BG 10 years.png" alt="IIM Bodhgaya Logo" class="institute-logo">
+            </div>
+            <ul class="nav-center">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#events">Events</a></li>
+                <li><a href="../index.html#gallery">Gallery</a></li>
+                <li><a href="../index.html#roadmaps">Roadmaps</a></li>
+                <li><a href="../index.html#newsletter">Newsletter</a></li>
+            </ul>
+            <div class="logo-right">
+                <img src="../alumni-committee-logo.jpeg" alt="Alumni Committee Logo" class="committee-logo">
+            </div>
+        </nav>
+    </header>
+
+    <main style="margin-top: 100px;">
+        <section class="past-events-section">
+            <h1>Anusmruti - Past Events</h1>
+            <p class="section-description">Relive the memorable moments from previous Anusmruti alumni reunions</p>
+
+            <div class="past-events-grid">
+                <div class="past-event-card">
+                    <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=400&h=250&fit=crop" alt="Anusmruti 2023" class="past-event-image">
+                    <div class="past-event-content">
+                        <h3>Anusmruti 2023</h3>
+                        <p class="past-event-date">December 29, 2023</p>
+                        <p>A grand celebration with over 200 alumni from various batches. Featured keynote speeches, cultural performances, and networking sessions.</p>
+                        <div class="event-stats">
+                            <span>200+ Attendees</span>
+                            <span>15 Speakers</span>
+                            <span>3 Days</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="past-event-card">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=250&fit=crop" alt="Anusmruti 2022" class="past-event-image">
+                    <div class="past-event-content">
+                        <h3>Anusmruti 2022</h3>
+                        <p class="past-event-date">December 30, 2022</p>
+                        <p>Virtual reunion connecting alumni worldwide during challenging times. Interactive sessions and digital networking opportunities.</p>
+                        <div class="event-stats">
+                            <span>300+ Online</span>
+                            <span>10 Sessions</span>
+                            <span>2 Days</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="past-event-card">
+                    <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=400&h=250&fit=crop" alt="Anusmruti 2021" class="past-event-image">
+                    <div class="past-event-content">
+                        <h3>Anusmruti 2021</h3>
+                        <p class="past-event-date">December 28, 2021</p>
+                        <p>Hybrid event combining in-person and virtual participation. Focus on post-pandemic career opportunities and resilience.</p>
+                        <div class="event-stats">
+                            <span>150+ Hybrid</span>
+                            <span>12 Speakers</span>
+                            <span>2 Days</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="past-event-card">
+                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=250&fit=crop" alt="Anusmruti 2020" class="past-event-image">
+                    <div class="past-event-content">
+                        <h3>Anusmruti 2020</h3>
+                        <p class="past-event-date">December 27, 2020</p>
+                        <p>Inaugural Anusmruti event marking the beginning of our annual alumni reunion tradition. Foundation for future celebrations.</p>
+                        <div class="event-stats">
+                            <span>100+ Attendees</span>
+                            <span>8 Speakers</span>
+                            <span>1 Day</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-section">
+                <h2>Event Gallery</h2>
+                <div class="past-events-gallery">
+                    <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=300&h=200&fit=crop" alt="Gallery 1" onclick="openLightbox(this.src)">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=300&h=200&fit=crop" alt="Gallery 2" onclick="openLightbox(this.src)">
+                    <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=300&h=200&fit=crop" alt="Gallery 3" onclick="openLightbox(this.src)">
+                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=300&h=200&fit=crop" alt="Gallery 4" onclick="openLightbox(this.src)">
+                    <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=300&h=200&fit=crop" alt="Gallery 5" onclick="openLightbox(this.src)">
+                    <img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=300&h=200&fit=crop" alt="Gallery 6" onclick="openLightbox(this.src)">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <script>
+        function openLightbox(src) {
+            document.getElementById('lightbox').style.display = 'block';
+            document.getElementById('lightbox-img').src = src;
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
